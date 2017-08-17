@@ -122,8 +122,8 @@ Windows, by Steve Bush. This is the version that I have modified for Linux:
     If you want to remove a set, uncheck it and then choose "OK" again. GURM will remove the no longer needed files and refreshes your resource list in GIMP. The dialog closes after refreshing the lists.
         
   + Use it without GIMP opened:  
-        The script runs as well without GIMP opened. It works exactly the same way as with GIMP opened except it 
-        wont refresh your resource list (although there is no need for it!).
+        The script runs as well without GIMP opened. It works exactly the same way as when started from GIMP, except it 
+        won't refresh your resource list (although there is no need for it in this case).
 
 4. **What GURM can't do**  
 
@@ -135,6 +135,8 @@ Windows, by Steve Bush. This is the version that I have modified for Linux:
     
 5. **Error Handling**  
 
+      Filepath errors in `gurm.py` or `gurm.ini` will be displayed in an error dialog.  
+      
       `gurm.py` must be executable: `chmod +x gurm.py`
 
       If GURM does not copy anything, but everything else seems to work fine, check if you have the needed
