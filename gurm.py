@@ -26,7 +26,7 @@
 ###### USER SETTINGS ###################################################
 #
 # Place gurm.py and gurm.ini in the plug-ins directory
-gurm_file = "/home/damo/.config/GIMP/2.9/plug-ins/gurm.ini" 
+gurm_file = ".config/GIMP/2.9/plug-ins/gurm.ini" 
 
 winIcon = "/usr/share/gimp/2.0/images/wilber.png"
 
