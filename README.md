@@ -43,8 +43,22 @@ Windows, by Steve Bush. This is the version that I have modified for Linux:
   + Currently the plug-in can handle Brushes, Dynamics, Fonts, Gradients, Palettes, Patterns, Plug-ins and  
   Script-Fu scripts.
 
-2.**Initial Setup**
+2.**Initial Setup**  
 
+   - Prepare GIMP  
+  
+     Presumably, at the moment you have a lot of resources already in your GIMP folders, and you
+     have to clear them before starting to use GURM. All that should be left in `/plug-ins` are `gurm.py` 
+     and `gurm.ini`.
+        
+     Now before you do anything BACKUP your GIMP resource folders (/brushes, /dynamics, /fonts, /gradients, 
+     /palettes, /patterns, /plug-ins and /scripts). Then copy the files to the directories you just created.
+        
+     For example, move everything in `"$HOME/.config/GIMP/<your gimp version>/brushes"` to 
+     `"$HOME/graphics/gimp/gimp-resources/brushes"`
+        
+      Do the same for all the other directories.
+      
   - "Installation"  
       * Copy `gurm.py` into your plug-ins folder, which is *normally* located at:  
           `$HOME/.config/GIMP/<your gimp version>/plug-ins`
@@ -86,21 +100,7 @@ Windows, by Steve Bush. This is the version that I have modified for Linux:
             
      Do the same for the other resources (Dynamics, Fonts, Gradients, Palettes, Patterns, Plug-ins and 
      Scripts).
-        
-  - Prepare GIMP
-  
-     Presumably, at the moment you have a lot of resources already in your GIMP folders, and you
-     have to clear them before starting to use GURM. All that should be left in `/plug-ins` are `gurm.py` 
-     and `gurm.ini`.
-        
-     Now before you do anything BACKUP your GIMP resource folders (/brushes, /dynamics, /fonts, /gradients, 
-     /palettes, /patterns, /plug-ins and /scripts). Then copy the files to the directories you just created.
-        
-     For example, move everything in `"$HOME/.config/GIMP/<your gimp version>/brushes"` to 
-     `"$HOME/graphics/gimp/gimp-resources/brushes"`
-        
-      Do the same for all the other directories.
-        
+
   - useManager
   
      If you don't want to use one of the managers GURM provides, simply replace the "yes"
@@ -117,24 +117,24 @@ Windows, by Steve Bush. This is the version that I have modified for Linux:
 
 3. **How to use GURM**  
 
-  + The plug-in menu appears on the main menubar of GIMP. Just click on the set of resources you want to use and click "OK". GURM then copies the needed files and refreshes your resource list in GIMP.
+   + The plug-in menu appears on the main menubar of GIMP. Just click on the set of resources you want to use and click "OK". GURM then copies the needed files and refreshes your resource list in GIMP.
         
-    If you want to remove a set, uncheck it and then choose "OK" again. GURM will remove the no longer needed files and refreshes your resource list in GIMP. The dialog closes after refreshing the lists.
+     If you want to remove a set, uncheck it and then choose "OK" again. GURM will remove the no longer needed files and refreshes your resource list in GIMP. The dialog closes after refreshing the lists.
         
-  + Use it without GIMP opened:  
+   + Use it without GIMP opened:  
         The script runs as well without GIMP opened. It works exactly the same way as when started from GIMP, except it 
         won't refresh your resource list (although there is no need for it in this case).  
         
-  + Change the GURM menu item:  
+   + Change the GURM menu item:  
         If you want the plug-in to appear directly in the GIMP menubar, and not as a GURM menu item, then edit the `register()` function at the end of `gurm.py`. Change:  `menu="<Image>/GURM"` to `menu="<Image>"`
 
 4. **What GURM can't do**  
 
-      GURM does not handle zip-archives;  
+   +  GURM does not handle zip-archives;  
       
-      It does not deal with MyPaint brushes;  
+   +  It does not deal with MyPaint brushes;  
       
-      It does not yet handle other resources, for example tool options, curves, themes etc.
+   +  It does not yet handle other resources, for example tool options, curves, themes etc.
     
 5. **Error Handling**  
 
