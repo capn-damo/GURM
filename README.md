@@ -23,7 +23,7 @@ Windows, by Steve Bush. This is the version that I have modified for Linux:
 * cleaned the code
 * made the user settings simpler
 * added GIMP window icon
-* autosize the window depending, on the number of tabs
+* autosize the window, depending on the number of tabs
 
 ## Installation
 
