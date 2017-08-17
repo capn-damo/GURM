@@ -12,7 +12,7 @@ A GIMP plug-in script to manage installed resources:
 * Plug-ins
 * Scripts
 
-
+![GURM](~/tmp/uploads/gurm-scrot.png)
 
 The idea for GURM is based on the Brush Manager by Sean Bogie, and developed
 as [GURM v0.7](http://registry.gimp.org/node/13473) by Sagenlicht, from [Cartographers Guild](http://cartographersguild.com)
