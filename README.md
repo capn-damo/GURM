@@ -1,7 +1,7 @@
 # GURM
 **GIMP Unified Resource Manager**
 
-A GIMP plug-in script to manage installed resources:
+A GIMP plug-in script to manage installed resources - just load what is needed:
 
 * Brushes
 * Dynamics
