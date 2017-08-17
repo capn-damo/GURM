@@ -183,10 +183,7 @@ class Error:
         msgWindow.run()
         msgWindow.destroy()
         sys.exit()
-        
-    #def gtk_call(self):
-        #gtk.main()
-        
+              
 class GUI:
     def dialog_delete(self, widget, event, data=None):
         return True
@@ -358,7 +355,7 @@ class GUI:
         aboutBox.set_border_width(1)
         aboutBox.set_size_request(boxWidth, boxHeight)
         aboutBox.show()
-        aboutLabel = gtk.Label("<b>GURM\nGIMP Unified Resource Manager</b>\n"\
+        aboutLabel = gtk.Label("<b>GURM\n\nGIMP Unified Resource Manager</b>\n"\
                     + ("<b>Version 0.9</b>")
                     + ("\n\nGURM v0.7: original script by Sagenlicht from Cartographers Guild")
                     + ("\nGURM v0.8.4: by R.M. Bush 2013")
