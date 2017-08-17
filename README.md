@@ -116,13 +116,12 @@ Windows, by Steve Bush. This is the version that I have modified for Linux:
     
 
 3. **How to use it**  
-  * The plug-in appears on the main menubar of GIMP. Just click on the set of resources you want to use
-    and click "OK". GURM then copies the needed files and refreshes your resource list in GIMP.
+
+  + The plug-in appears on the main menubar of GIMP. Just click on the set of resources you want to use and click "OK". GURM then copies the needed files and refreshes your resource list in GIMP.
         
-    If you want to remove a set just click again on the set and then on "OK". GURM again, will remove the no 
-    longer needed files and refreshes your resource list in GIMP. The dialog closes after refreshing the lists.
+    If you want to remove a set, uncheck it and then choose "OK" again. GURM will remove the no longer needed files and refreshes your resource list in GIMP. The dialog closes after refreshing the lists.
         
-  * Use it without GIMP opened:  
+  + Use it without GIMP opened:  
         The script runs as well without GIMP opened. It works exactly the same way as with GIMP opened except it 
         wont refresh your resource list (although there is no need for it!).
 
