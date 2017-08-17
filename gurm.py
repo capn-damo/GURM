@@ -24,6 +24,7 @@
 # GNU General Public License for more details.
 
 ###### USER SETTINGS ###################################################
+# Installation and set-up is described in the INSTALL file
 #
 # Place gurm.py and gurm.ini in the plug-ins directory
 gurm_file = ".config/GIMP/2.9/plug-ins/gurm.ini" 
@@ -357,7 +358,7 @@ class GUI:
         aboutBox.set_border_width(1)
         aboutBox.set_size_request(boxWidth, boxHeight)
         aboutBox.show()
-        aboutLabel = gtk.Label("GURM\n<b>GIMP Unified Resource Manager</b>\n"\
+        aboutLabel = gtk.Label("<b>GURM\nGIMP Unified Resource Manager</b>\n"\
                     + ("<b>Version 0.9</b>")
                     + ("\n\nGURM v0.7: original script by Sagenlicht from Cartographers Guild")
                     + ("\nGURM v0.8.4: by R.M. Bush 2013")
