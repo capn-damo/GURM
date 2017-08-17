@@ -31,8 +31,8 @@ Windows, by Steve Bush. This is the version that I have modified for Linux:
 
 1. What is GURM?
 1. Initial Setup
-1. How to use it
-1. What GURM cant do
+1. How to use GURM
+1. What GURM can't do
 1. Error Handling 
 
 
@@ -115,7 +115,7 @@ Windows, by Steve Bush. This is the version that I have modified for Linux:
      The GURM dialog window will adjust its width depending on the number of Manager tabs which are in use.
     
 
-3. **How to use it**  
+3. **How to use GURM**  
 
   + The plug-in appears on the main menubar of GIMP. Just click on the set of resources you want to use and click "OK". GURM then copies the needed files and refreshes your resource list in GIMP.
         
@@ -127,11 +127,17 @@ Windows, by Steve Bush. This is the version that I have modified for Linux:
 
 4. **What GURM can't do**  
 
-      GURM does not handle zip-archives
+      GURM does not handle zip-archives;  
+      
+      It does not deal with MyPaint brushes;  
+      
+      It does not yet handle other resources, for example tool options, curves, themes etc.
     
 5. **Error Handling**  
 
+      `gurm.py` must be executable: `chmod +x gurm.py`
+
       If GURM does not copy anything, but everything else seems to work fine, check if you have the needed
-      file permissions. Write permissions are needed for the gimpPaths, and for "gurm.ini" 
+      file permissions. Write permissions are needed for the gimpPaths, and for `gurm.ini`. 
 
 
